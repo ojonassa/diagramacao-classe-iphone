@@ -4,9 +4,11 @@ public class app {
     public static void main(String[] args) {
         Reprodutor meuReprodutor = new Reprodutor();
 
-        meuReprodutor.selecionarMusica("Música 1");
+        Musica minhaMusica = new Musica("Musica 1", "Artista 1");
 
-        meuReprodutor.tocar("Musica 1");
+        meuReprodutor.selecionarMusica(minhaMusica);
+
+        meuReprodutor.tocar(minhaMusica);
 
         meuReprodutor.pausar();
     }

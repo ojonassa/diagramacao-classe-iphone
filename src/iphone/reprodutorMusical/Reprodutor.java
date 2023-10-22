@@ -1,10 +1,10 @@
 package iphone.reprodutorMusical;
 
 public class Reprodutor implements ReprodutorMusical {
-    private String musicaAtual;
+    private Musica musicaAtual;
 
     @Override
-    public void tocar(String musica) {
+    public void tocar(Musica musica) {
         if (musicaAtual != null) {
             System.out.println("Tocando música: " + musicaAtual);
         } else {
@@ -22,7 +22,7 @@ public class Reprodutor implements ReprodutorMusical {
     }
 
     @Override
-    public void selecionarMusica(String musica) {
+    public void selecionarMusica(Musica musica) {
         this.musicaAtual = musica;
         System.out.println("Selecionando música: " + musica);
     }

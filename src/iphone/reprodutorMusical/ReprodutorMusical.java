@@ -1,7 +1,7 @@
 package iphone.reprodutorMusical;
 
 public interface ReprodutorMusical {
-    void tocar(String musica);
+    void tocar(Musica musica);
     void pausar();
-    void selecionarMusica(String musica);
+    void selecionarMusica(Musica musica);
 }
