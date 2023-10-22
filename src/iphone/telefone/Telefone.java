@@ -3,7 +3,7 @@ package iphone.telefone;
 public class Telefone implements AparelhoTelefonico {
 
     @Override
-    public void ligar(int numero) {
+    public void ligar(Contato numero) {
         System.out.println("Realizando chamada para " + numero);
     }
 

@@ -1,21 +1,21 @@
 package iphone.navegadorInternet;
 
 public class Navegador implements NavegadorInternet {
-    private String paginaAtual;
+    private Pagina paginaAtual;
 
     @Override
-    public void exibirPagina(String url) {
-        if (url != null) {
-            this.paginaAtual = url;
-            System.out.println("Exibindo página: " + url);
+    public void exibirPagina(Pagina pagina) {
+        if (pagina != null) {
+            this.paginaAtual = pagina;
+            System.out.println("Exibindo página: " + pagina);
         } else {
             System.out.println("URL inválida");
         }
     }
 
     @Override
-    public void adicionarNovaAba(String url) {
-        System.out.println("Nova aba adicionada: " + url);
+    public void adicionarNovaAba(Pagina pagina) {
+        System.out.println("Nova aba adicionada: " + pagina);
     }
 
     @Override

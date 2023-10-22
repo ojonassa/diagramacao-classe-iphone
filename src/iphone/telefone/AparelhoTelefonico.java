@@ -1,7 +1,7 @@
 package iphone.telefone;
 
 public interface AparelhoTelefonico {
-    void ligar(int numero);
+    void ligar(Contato numero);
 
     void atender();
 

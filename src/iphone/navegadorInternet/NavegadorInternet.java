@@ -1,9 +1,9 @@
 package iphone.navegadorInternet;
 
 public interface NavegadorInternet {
-    void exibirPagina(String url);
+    void exibirPagina(Pagina pagina);
 
-    void adicionarNovaAba(String url);
+    void adicionarNovaAba(Pagina pagina);
 
     void atualizarPagina();
 }
